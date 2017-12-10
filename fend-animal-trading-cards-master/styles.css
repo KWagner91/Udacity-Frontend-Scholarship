@@ -1,0 +1,32 @@
+/* add your CSS here */
+.container{
+width:60%;
+  margin:0 auto;
+}
+  .subContainer{
+    border:1px solid #eee;
+    margin-top:2%;
+    width:45%;
+    line-height: 1.2;
+  }
+    img{
+      border-radius:2%;
+      box-shadow: 5px 5px 2px blue;
+      transition: box-shadow 3s ease;
+    }
+
+    img:hover{
+      box-shadow: 5px 5px 2px #ff0000;
+
+    }
+    .subContainer p:first-of-type{
+      font-style: italic;
+    }
+
+    .emphasize{
+      font-weight:600;
+    }
+
+    li{
+    list-style:none;
+    }
