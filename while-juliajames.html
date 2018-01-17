@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+
+  <script>
+
+  /*
+ * Programming Quiz: JuliaJames (4-1)
+ */
+
+var x = 1;
+
+while ( x<=20/* your stop condition goes here */) {
+    // check divisibility
+    // print Julia, James, or JuliaJames
+    if(x%3 ===0 && x%5 ===0){
+      console.log("JuliaJames");
+    } else if(x%3 ===0){
+        console.log("Julia");
+    } else if(x%5 ===0){
+        console.log("James");
+
+    }
+
+    else{
+        console.log(x);
+    }
+     // increment x
+    x++;
+}
+
+
+  </script>
+
+</body>
+</html>
