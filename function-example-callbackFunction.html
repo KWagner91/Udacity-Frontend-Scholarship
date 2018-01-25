@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+
+  <script>
+
+ var catSays = function(max) {
+ var catMessage = "";
+ // if max is > i increment meow
+ for (var i = 0; i < max; i++) {
+  //added meow to catMessage
+   catMessage += "meow";
+ }
+ return catMessage; // exit the function
+};
+
+// function declaration helloCat accepting a callback
+function helloCat(callbackFunc) {
+// 3 = no: of meows
+ return "Hello " + callbackFunc(3);
+}
+
+// pass in catSays as a callback function
+helloCat(catSays);
+
+  </script>
+
+</body>
+</html>
