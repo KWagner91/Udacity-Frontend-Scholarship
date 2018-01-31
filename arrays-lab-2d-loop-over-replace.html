@@ -23,13 +23,17 @@
     [76, 7, 9, 6, 3, 73, 77, 100, 56, 100]
 ];
 
-// your code goes here
+// iterate through each row
 for(var row=0; row<numbers.length; row++){
-
+    // iterate through each cell
     for(var cell =0; cell<numbers[row].length; cell++){
+        //(array)[row][cell]
+      )
         if(numbers[row][cell]%2 ===0){
+            //if even to replace row cell value with string
             numbers[row][cell]='even';
         }else{
+          //if odd replace row cell value with string
            numbers[row][cell]='odd';
         }
     }
