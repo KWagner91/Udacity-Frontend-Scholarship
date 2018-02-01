@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+
+  <script>
+
+  /*
+ * Programming Quiz: Umbrella (7-1)
+ */
+
+var umbrella = {
+    color: "pink",
+    isOpen: true,
+    open: function() {
+        if (umbrella.isOpen === true) {
+            return "The umbrella is already opened!";
+        } else {
+            // if umbrella has not already been opened sets to true
+            umbrella.isOpen = true;
+            return "Julia opens the umbrella!";
+        }
+    },
+    // your code goes here
+   close: function(){
+       if(umbrella.isOpen === false){
+          return "the umbrella has already been closed";
+       } else {
+           umbrella.isOpen = false;
+           return "Julia closes the umbrella";
+       }
+   }
+};
+
+  </script>
+
+</body>
+</html>
