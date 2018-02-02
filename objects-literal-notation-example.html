@@ -10,13 +10,16 @@
 
   <script>
 
-  var donuts = ["jelly donut", "chocolate donut", "glazed donut"];
+  var sister = {
+    name: "Sarah",
+    age: 23,
+    parents: [ "alice", "andy" ],
+    siblings: ["julia"],
+    favoriteColor: "purple",
+    pets: true
+  };
 
-// the variable `i` is used to step through each element in the array
-for (var i = 0; i < donuts.length; i++) {
-    donuts[i] += " hole";
-    donuts[i] = donuts[i].toUpperCase();
-}
+  console.log(sister["name"]);
 
   </script>
 
