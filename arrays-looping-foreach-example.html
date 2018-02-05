@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+
+  <script>
+
+  var donuts = ["jelly donut", "chocolate donut", "glazed donut"];
+
+donuts.forEach(function(donut) {
+  donut += " hole";
+  donut = donut.toUpperCase();
+  console.log(donut);
+});
+
+words = ["cat", "in", "hat"];
+//word = piece of position, num = position // all = everything in array
+words.forEach(function(word, num, all) {
+  console.log("Word " + num + " in " + all.toString() + " is " + word);
+});
+
+  </script>
+
+</body>
+</html>
