@@ -61,15 +61,17 @@ This is the HTML document that you'll use jQuery to modify. To take the quiz, cl
     </div>
 
     <script>
-    var articleItems;
+    // append last name to James
+    $('.bold').append(' Taylor');
 
-    // get all classes containing article-item
-    articleItems = $('.article-item');
-    /*find all ul elements
-      only li's will deleted inside the ul
-      only 1 ul exists onpage */
-    ul = articleItems.find('ul');
-    ul.remove();
+    // prepend a space before
+    $('header').prepend('<q> Authored by Udacity</q>');
+
+    //insert strong tags before h1
+    $('<strong> Beginning of section</strong>').insertBefore('h1');
+
+    //insert an image after headers
+    $('<img src="https://thumb1.shutterstock.com/display_pic_with_logo/1318939/172653986/stock-vector-emoticon-showing-thumb-up-172653986.jpg">').insertAfter('header');
 
     </script>
 </body>
