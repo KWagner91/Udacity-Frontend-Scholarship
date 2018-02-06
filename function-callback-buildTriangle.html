@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+
+  <script>
+  /*
+   * Programming Quiz: Build A Triangle (5-3)
+   */
+
+  // creates a line of * for a given length
+  function makeLine(length) {
+      var line = "";
+      for (var j = 1; j<=length; j++) {
+          line += "* ";
+      }
+      return line + "\n";
+  }
+
+  // your code goes here.  Make sure you call makeLine() in your own code.
+   function buildTriangle(width){
+     // blank var to store makeline + width output
+      var asterix = "";
+      for(width=1; width<=10; width++){
+          asterix +=makeLine(width);
+
+      }
+      return asterix;
+
+   }
+   console.log(buildTriangle(10));
+
+  </script>
+
+</body>
+</html>
