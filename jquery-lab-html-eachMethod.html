@@ -60,32 +60,39 @@ This is the HTML document that you'll use jQuery to modify. To take the quiz, cl
         </div>
     </div>
 
-    <script>
-    /*
-For this quiz, change the font-size of all the article-items to 20px!
+    <script type="text/javascript">
+    /* For this quiz, use jQuery's each() method to iterate through the <p>s,
+calculate the length of each one, and add each length to the end of each <p>.
 
-You must use jQuery's css() method!
+Also, make sure you don't change the text inside each <p> except to add the length, otherwise your
+length numbers won't be correct!
 */
 
-// Start with this variable!
-var articleItems;
+// Your code goes here!
+// $('p').each(function(){
+//     $(this).insertAfter($(this));
+//
+//
+// });
 
-articleItems = $('.article-item'); // your code goes here!
+//solution
 
-articleItems.css('fontSize', '20px');
+function numberAdder(){
+//variable declaration
+  var text, number;
+  //$this = p,  finds text in p
+  text = $(this).text();
 
+  // gets the length of paragraph
+  number = text.length;
 
-        /* For this quiz, change the font-size of all the article-items to 20px!
-        You must use jQuery's css() method!
-        */
+ // change text on each element original text + number
+  $(this).text(text + " " + number);
 
-        // Start with this variable!
-        var articleItems;
+}
 
-        articleItems = $('.article-item'); // your code goes here!
-
-        articleItems.css('fontSize', '20px');
-
+// iterates 'p' and calls the function
+$('p').each(numberAdder);
     </script>
 </body>
 </html>

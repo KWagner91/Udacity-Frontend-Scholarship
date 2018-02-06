@@ -61,30 +61,17 @@ This is the HTML document that you'll use jQuery to modify. To take the quiz, cl
     </div>
 
     <script>
-    /*
-For this quiz, change the font-size of all the article-items to 20px!
+    // append last name to James
+    $('.bold').append(' Taylor');
 
-You must use jQuery's css() method!
-*/
+    // prepend a space before
+    $('header').prepend('<q> Authored by Udacity</q>');
 
-// Start with this variable!
-var articleItems;
+    //insert strong tags before h1
+    $('<strong> Beginning of section</strong>').insertBefore('h1');
 
-articleItems = $('.article-item'); // your code goes here!
-
-articleItems.css('fontSize', '20px');
-
-
-        /* For this quiz, change the font-size of all the article-items to 20px!
-        You must use jQuery's css() method!
-        */
-
-        // Start with this variable!
-        var articleItems;
-
-        articleItems = $('.article-item'); // your code goes here!
-
-        articleItems.css('fontSize', '20px');
+    //insert an image after headers
+    $('<img src="https://thumb1.shutterstock.com/display_pic_with_logo/1318939/172653986/stock-vector-emoticon-showing-thumb-up-172653986.jpg">').insertAfter('header');
 
     </script>
 </body>

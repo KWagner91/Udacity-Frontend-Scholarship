@@ -61,30 +61,15 @@ This is the HTML document that you'll use jQuery to modify. To take the quiz, cl
     </div>
 
     <script>
-    /*
-For this quiz, change the font-size of all the article-items to 20px!
+    var articleItems;
 
-You must use jQuery's css() method!
-*/
-
-// Start with this variable!
-var articleItems;
-
-articleItems = $('.article-item'); // your code goes here!
-
-articleItems.css('fontSize', '20px');
-
-
-        /* For this quiz, change the font-size of all the article-items to 20px!
-        You must use jQuery's css() method!
-        */
-
-        // Start with this variable!
-        var articleItems;
-
-        articleItems = $('.article-item'); // your code goes here!
-
-        articleItems.css('fontSize', '20px');
+    // get all classes containing article-item
+    articleItems = $('.article-item');
+    /*find all ul elements
+      only li's will deleted inside the ul
+      only 1 ul exists onpage */
+    ul = articleItems.find('ul');
+    ul.remove();
 
     </script>
 </body>
