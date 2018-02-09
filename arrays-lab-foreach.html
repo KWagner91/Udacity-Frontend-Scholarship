@@ -27,13 +27,13 @@ var test = [12, 929, 11, 3, 199, 1000, 7, 1, 24, 37, 4,
 ];
 
 // Write your code here
-test.forEach(function divisible(number, position, array){
+test.forEach(function divisible(number, position){
     if(number%3===0){
     //assign back value to index of array + 100
     test[position] = number+100;
     }
 
-    console.log(test);
+    console.log(test[position]);
 });
 
   </script>
