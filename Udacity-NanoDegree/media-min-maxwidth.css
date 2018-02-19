@@ -1,0 +1,19 @@
+
+/*if the screen is greater than 400px and less than 600px*/
+@media screen and (min-width: 400px) and (max-width: 600px) {
+          body{background-color:green;
+          }
+      }
+
+/*if the screen is less than 400px*/
+    @media screen and (max-width: 400px)
+   {
+        body{background-color:red;}
+    }
+
+ /*if the screen is greater than 600px*/
+    @media screen and (min-width:600px){
+
+        body{background-color:blue;
+        }
+    }
