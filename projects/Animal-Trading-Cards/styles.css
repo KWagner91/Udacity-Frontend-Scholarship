@@ -18,11 +18,12 @@ body {
 
 .subContainer {
       /*margin-left:2%;*/
-    width: 100%;
-    margin-right: 2px;
+    border: 1px solid black;
 }
 
-h1, img, .subContainer {
+h1,
+img,
+.subContainer {
     padding: 5px;
 }
 
@@ -37,6 +38,7 @@ img {
 
 li {
     list-style: none;
+    padding: 0;
 }
 
 .bold {
