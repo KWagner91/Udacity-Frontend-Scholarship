@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Layout Shifter Technique</title>
+
+  <style>
+
+    .container {
+  /*child elements will take the full width of the viewport*/
+      width: 100%;
+      display:flex;
+      flex-wrap: wrap;
+    }
+
+    .blue {
+      background-color: blue;
+      width:100%;
+      height:80px;
+    }
+
+    .red {
+      background-color: red;
+      width:100%;
+      height:80px;
+
+    }
+
+    .orange {
+      background-color: orange;
+      width:100%;
+      height:80px;
+
+    }
+
+    @media screen and (max-width: 550px) {
+      .container2 {
+        width: 50%;
+      }
+
+      .blue {
+      width: 25%;
+      }
+
+      .red {
+        width:50%;
+      }
+
+      .orange {
+        width: 25%;
+      }
+    }
+
+    @media screen and (max-width: 450px) {
+      .blue {
+      width: 25%;
+      }
+
+      .red {
+        width:75%;
+      }
+
+      .orange{
+        width:100%;
+      }
+    }
+
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="blue"></div>
+
+  </div>
+
+  <div class="container2">
+    <div class="red"></div>
+    <div class="orange"></div>
+
+  </div>
+
+</body>
+</html>
