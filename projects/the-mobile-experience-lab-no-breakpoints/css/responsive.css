@@ -1,0 +1,125 @@
+@media screen and (min-width: 400px) {
+  .container {
+    display: flex;
+    width: 100%;
+  }
+
+.intro h1 {
+  font-size: 1.5em;
+  margin: 0;
+  position: relative;
+  bottom: 4.5em;
+
+  }
+
+.picture,
+.resume {
+width: 50%;
+
+}
+
+.tag {
+  position: absolute;
+
+}
+
+.main p:first-child,
+.main h4:first-child {
+  margin-top: 2em;
+}
+
+@media screen and (min-width: 575px) {
+  .intro h1 {
+    position: relative;
+    bottom: 4.5em;
+
+    }
+
+    .main p,
+    .date-range {
+      font-size: 1.2em;
+    }
+
+    .h4,
+    .tag {
+      font-size: 1.5em;
+    }
+
+    .intro h1 {
+      font-size: 1.75em;
+      position: relative;
+      bottom: 6.5em;
+
+    }
+
+    .picture,
+    .resume {
+      padding: 1.5em;
+    }
+}
+
+@media screen and (min-width: 697px) {
+  .resume {
+    width: 40%;
+  }
+
+  .pciture {
+    width:60%;
+  }
+
+  .intro h1 {
+    position: relative;
+    bottom: 8.5em;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .background {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 950px) {
+  .intro h1 {
+    position: relative;
+    bottom: 11.5em;
+    font-size: 2em;
+  }
+}
+
+@media screen and (min-width: 1175px) {
+  .intro h1 {
+    text-align: center;
+    font-size: 2.5em;
+    position: relative;
+    bottom: 7em;
+  }
+
+  .resume {
+    width: 40%;
+    ;
+  }
+
+  .picture {
+    width: 40%;
+
+  }
+}
+
+@media screen and (min-width: 1275px) {
+  .intro h1 {
+    text-align: center;
+    font-size: 2.5em;
+    position: relative;
+    bottom: 15em;
+  }
+
+  .resume {
+    width: 40%;
+    ;
+}
+
+.picture {
+  width: 60%;
+
+}
