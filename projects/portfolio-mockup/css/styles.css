@@ -1,6 +1,14 @@
 html,
-body {
+body,
+figure,
+h1,
+h2 {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+main {
+  width: 70%;
+  margin: 0 auto;
 }
